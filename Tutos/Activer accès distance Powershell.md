@@ -1,0 +1,9 @@
+- Configurer le service ssh
+	- https://www.it-connect.fr/comment-configurer-ladministration-a-distance-powershell-via-ssh/
+- Configurer WinRM
+	- https://www.it-connect.fr/powershell-remoting-avec-winrm/
+	- Set-Item WSMan:\localhost\Client\TrustedHosts "172.16.40.20, cliwin01"
+- Création compte administrateur sur client Créer une session PSSession sur le client et sur le serveur
+	- New-PSSession -ComputerName Cliwin01 -Credential Cliwin01\Administrateur
+- Connexion depuis serveur sur machine distante en tant qu'administrateur
+	- EnterPSSession -ComputerName Cliwin01 -Credential Cliwin01\Administrateur
